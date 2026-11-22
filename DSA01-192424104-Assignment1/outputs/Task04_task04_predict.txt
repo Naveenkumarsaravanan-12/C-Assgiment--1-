@@ -1,0 +1,13 @@
+$ g++ -std=c++17 -Wall -Wextra Task04/task04_predict.cpp -o task04_predict
+/mnt/data/DSA01-192424104-Assignment1/Task04/task04_predict.cpp: In function ‘int main()’:
+/mnt/data/DSA01-192424104-Assignment1/Task04/task04_predict.cpp:14:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+   14 | std::cout << (s < u ? "s < u" : "s >= u") << '\n';
+      |               ~~^~~
+
+
+[compile: success]
+[run exit code: 0]
+3 3.5
+C 68
+1 true
+s >= u

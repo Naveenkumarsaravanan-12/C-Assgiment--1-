@@ -1,0 +1,21 @@
+$ g++ -std=c++17 -Wall -Wextra Task02/task02_errors.cpp -o task02_errors
+/mnt/data/DSA01-192424104-Assignment1/Task02/task02_errors.cpp: In function ‘int main()’:
+/mnt/data/DSA01-192424104-Assignment1/Task02/task02_errors.cpp:6:15: error: cannot convert ‘Zone’ to ‘int’ in initialization
+    6 | int a = Zone::Inner; // ERROR: no implicit conversion from enum class to int
+      |         ~~~~~~^~~~~
+      |               |
+      |               Zone
+/mnt/data/DSA01-192424104-Assignment1/Task02/task02_errors.cpp:7:10: error: cannot convert ‘int’ to ‘Zone’ in initialization
+    7 | Zone z = 1; // ERROR: int cannot become Zone
+      |          ^
+      |          |
+      |          int
+/mnt/data/DSA01-192424104-Assignment1/Task02/task02_errors.cpp:2:23: error: expected unqualified-id before numeric constant
+    2 | #define OLD_SURCHARGE 20
+      |                       ^~
+/mnt/data/DSA01-192424104-Assignment1/Task02/task02_errors.cpp:8:5: note: in expansion of macro ‘OLD_SURCHARGE’
+    8 | int OLD_SURCHARGE = 5; // ERROR: macro silently rewrites this to "int 20 = 5;"
+      |     ^~~~~~~~~~~~~
+
+
+[compile: failed; exit code 1]

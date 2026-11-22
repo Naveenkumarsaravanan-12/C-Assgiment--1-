@@ -1,0 +1,8 @@
+$ g++ -std=c++17 -Wall -Wextra Task04/task04_narrowing_error.cpp -o task04_narrowing_error
+/mnt/data/DSA01-192424104-Assignment1/Task04/task04_narrowing_error.cpp: In function ‘int main()’:
+/mnt/data/DSA01-192424104-Assignment1/Task04/task04_narrowing_error.cpp:4:7: error: narrowing conversion of ‘3.7000000000000002e+0’ from ‘double’ to ‘int’ [-Wnarrowing]
+    4 | int x{3.7}; // ERROR: narrowing double -> int
+      |       ^~~
+
+
+[compile: failed; exit code 1]

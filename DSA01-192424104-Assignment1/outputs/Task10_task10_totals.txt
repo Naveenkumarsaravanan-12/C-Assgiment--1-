@@ -1,0 +1,13 @@
+$ g++ -std=c++17 -Wall -Wextra Task10/task10_totals.cpp -o task10_totals
+
+[compile: success]
+[run exit code: 0]
+  journeys  paise total (LL)     double total x100    difference       int total
+     20000          37650080         37650080.0000      0.000000        37650080
+    500000         941286280        941286280.0002      0.000163       941286280
+   3000000        5647727900       5647727899.9974     -0.002604      1352760604
+INT_MAX = 2147483647
+
+int sum=1705032704 1.951 ns/add sizeof=4
+long long sum=6000000000 1.882 ns/add sizeof=8
+double sum=60000000.0 3.670 ns/add sizeof=8

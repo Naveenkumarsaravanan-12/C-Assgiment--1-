@@ -1,0 +1,8 @@
+$ g++ -std=c++17 -Wall -Wextra Task07/task07_procedural.cpp -o task07_procedural
+
+[compile: success]
+[run exit code: 0]
+paid 1000 balance 9000
+paid 3600 balance 5400
+denied balance 5400
+after careless change: balance = -4599 paise

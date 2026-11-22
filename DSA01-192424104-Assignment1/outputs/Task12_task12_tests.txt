@@ -1,0 +1,29 @@
+$ g++ -std=c++17 -Wall -Wextra Task12/task12_tests.cpp -o task12_tests
+
+[compile: success]
+[run exit code: 0]
+Airport weekday 12:00 adult          expected  6000 actual  6000 PASS
+Airport weekday 09:00 adult          expected  7200 actual  7200 PASS
+Inner weekend 12:00 adult            expected   900 actual   900 PASS
+Outer weekend 12:00 adult            expected  2700 actual  2700 PASS
+Outer weekend 18:00 (peak) adult     expected  3600 actual  3600 PASS
+Airport weekend 12:00 adult          expected  5400 actual  5400 PASS
+Airport weekend 12:00 student        expected  3780 actual  3780 PASS
+Airport weekday 22:00 senior         expected  3000 actual  3000 PASS
+R1 Inner 12 adult                    expected  1000 actual  1000 PASS
+R2 Middle 9 adult                    expected  2400 actual  2400 PASS
+R3 Outer 22 student                  expected  2100 actual  2100 PASS
+R4 Inner 17 senior                   expected   600 actual   600 PASS
+R5 Outer 19 adult                    expected  3600 actual  3600 PASS
+
+Monthly pass tests (pass: Inner + Middle)
+Middle journey is free, balance unchanged                   PASS
+Inner journey is free in peak hour                          PASS
+Outer journey is NOT covered: Rs 30 charged                 PASS
+Airport journey denied: Rs 60 would leave Rs 10             PASS
+Card without a pass pays for Middle                         PASS
+
+Five-journey regression: total 9700 (expected 9700), closing balance 10300 (expected 10300)
+Five-journey total unchanged by the redesign                PASS
+
+19 of 19 tests passed

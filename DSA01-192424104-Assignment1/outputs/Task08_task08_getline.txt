@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra Task08/task08_getline.cpp -o task08_getline
+
+[compile: success]
+[run exit code: 0]
+accepted 12
+rejected "abc" (stoi)
+rejected "12x" (trailing characters)
+rejected "99999999999" (out of range for int)
+1 values accepted

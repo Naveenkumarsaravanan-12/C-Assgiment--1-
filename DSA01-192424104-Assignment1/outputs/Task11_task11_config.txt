@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra Task11/task11_config.cpp -o task11_config
+
+[compile: success]
+[run exit code: 0]
+loaded 3 fares in 80.609 microseconds
+zone 0 = 1000 paise
+zone 1 = 2000 paise
+zone 2 = 3000 paise
+space used: 24 bytes (+ vector overhead 24)

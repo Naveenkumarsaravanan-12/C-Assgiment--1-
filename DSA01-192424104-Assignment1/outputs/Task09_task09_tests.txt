@@ -1,0 +1,44 @@
+$ g++ -std=c++17 -Wall -Wextra Task09/task09_tests.cpp -o task09_tests
+
+[compile: success]
+[run exit code: 0]
+Test                     ExpFare ActFare ExpAllow ActAllow  ExpBal  ActBal Result
+Inner 12:00 adult           1000    1000     true     true    9000    9000 PASS
+Inner 09:00 adult           1200    1200     true     true    8800    8800 PASS
+Middle 12:00 adult          2000    2000     true     true    8000    8000 PASS
+Middle 18:00 adult          2400    2400     true     true    7600    7600 PASS
+Outer 22:00 adult           3000    3000     true     true    7000    7000 PASS
+Outer 08:00 adult           3600    3600     true     true    6400    6400 PASS
+hour 07 (before peak)       1000    1000     true     true    9000    9000 PASS
+hour 08 (peak starts)       1200    1200     true     true    8800    8800 PASS
+hour 10 (peak ended)        1000    1000     true     true    9000    9000 PASS
+hour 16 (before eve.)       1000    1000     true     true    9000    9000 PASS
+hour 17 (peak starts)       1200    1200     true     true    8800    8800 PASS
+hour 19 (still peak)        1200    1200     true     true    8800    8800 PASS
+hour 20 (peak ended)        1000    1000     true     true    9000    9000 PASS
+leaves exactly Rs 50        1000    1000     true     true    5000    5000 PASS
+leaves Rs 49.99             1000    1000    false    false    5999    5999 PASS
+balance already Rs 50       1000    1000    false    false    5000    5000 PASS
+Outer 22:00 student         2100    2100     true     true    7900    7900 PASS
+Inner 18:00 senior           600     600     true     true    9400    9400 PASS
+
+Invalid-input tests (true = input accepted)
+unknown zone code 7 rejected            expected false actual false PASS
+zone code 2 accepted                    expected true  actual true  PASS
+recharge of -500 rejected               expected false actual false PASS
+recharge of 0 rejected                  expected false actual false PASS
+recharge of 5000 accepted               expected true  actual true  PASS
+hour "ab" (letters) rejected            expected false actual false PASS
+hour "9x" rejected                      expected false actual false PASS
+hour "24" rejected                      expected false actual false PASS
+hour "9" accepted                       expected true  actual true  PASS
+
+Five journeys (hand-calculated total = Rs 97.00)
+ fare 1000  hand 1000  match
+ fare 2400  hand 2400  match
+ fare 2100  hand 2100  match
+ fare 600   hand 600   match
+ fare 3600  hand 3600  match
+ program total 9700 hand total 9700 closing balance 10300 PASS
+
+28 of 28 tests passed

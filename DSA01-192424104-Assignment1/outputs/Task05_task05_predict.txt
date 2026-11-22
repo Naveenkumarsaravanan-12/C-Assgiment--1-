@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra Task05/task05_predict.cpp -o task05_predict
+
+[compile: success]
+[run exit code: 0]
+11 16
+9 6 4
+6 4
+3 1 -3 -1
+18

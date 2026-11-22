@@ -1,0 +1,8 @@
+$ g++ -std=c++17 -Wall -Wextra Task04/task04_corrected.cpp -o task04_corrected
+
+[compile: success]
+[run exit code: 0]
+3 3.5
+C 68
+1 true
+s < u

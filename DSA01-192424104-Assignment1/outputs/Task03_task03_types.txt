@@ -1,0 +1,36 @@
+$ g++ -std=c++17 -Wall -Wextra Task03/task03_types.cpp -o task03_types
+
+[compile: success]
+[run exit code: 0]
+---- sizeof on this system ----
+bool 1
+char 1
+short 2
+int 4
+unsigned int 4
+long 8
+long long 8
+float 4
+double 8
+
+---- ranges from <climits> / <cfloat> ----
+INT_MIN -2147483648
+INT_MAX 2147483647
+UINT_MAX 4294967295
+LLONG_MIN -9223372036854775808
+LLONG_MAX 9223372036854775807
+DBL_DIG 15 reliable decimal digits
+
+---- precision problem: double rupees ----
+0.10 added 10 times = 0.99999999999999989 (r == 1.0 is false)
+double fare = 8.3999999999999986 -> truncated paise = 839 ; integer paise = 840 (off by 1 paisa)
+
+---- error growth: n fares of Rs 0.10 ----
+n=   20000 double=2000 exact=2000 abs error=7.235e-10
+n=  500000 double=49999.999999552900 exact=50000.000000000000 abs error=4.471e-07
+n= 3000000 double=300000.000001956825 exact=300000.000000000000 abs error=1.957e-06
+
+---- overflow: day's collection for the whole network ----
+long long total = 6000000000 paise (Rs 60000000)
+INT_MAX = 2147483647 paise (Rs 21474836)
+stored in int = 1705032704 <- wrong, overflowed

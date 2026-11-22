@@ -1,0 +1,13 @@
+$ g++ -std=c++17 -Wall -Wextra Task02/task02_constants.cpp -o task02_constants
+
+[compile: success]
+[run exit code: 0]
+Outer peak surcharge (paise) : 600
+FARE_PLUS_TAX * 3 (macro) : 16 <- expands to 10 + 2 * 3, not (10+2)*3
+(10+2) * 3 (what was intended) : 36
+Plain enum OUTER as int : 2
+Scoped enum needs a cast : 2
+sizeof(Zone) : 4 bytes
+sizeof(BASE_PAISE) : 24 bytes (array of 3 long long)
+MIN_BAL_CONST + MIN_BALANCE_PAISE : 10000
+OLD_SURCHARGE : 20

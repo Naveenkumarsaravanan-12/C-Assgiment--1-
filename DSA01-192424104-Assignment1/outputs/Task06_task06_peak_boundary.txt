@@ -1,0 +1,8 @@
+$ g++ -std=c++17 -Wall -Wextra Task06/task06_peak_boundary.cpp -o task06_peak_boundary
+
+[compile: success]
+[run exit code: 0]
+ 9:00 peak= true Outer fare Rs 36.00
+10:00 peak=false Outer fare Rs 30.00
+19:00 peak= true Outer fare Rs 36.00
+20:00 peak=false Outer fare Rs 30.00

@@ -1,0 +1,6 @@
+$ g++ -std=c++17 -Wall -Wextra Task07/task07_public_member.cpp -o task07_public_member
+
+[compile: success]
+[run exit code: 0]
+balance = -5000 paise (rule 'never below Rs 50' broken)
+sizeof(SmartCard) = 8 bytes

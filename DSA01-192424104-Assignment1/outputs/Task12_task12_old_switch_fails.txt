@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra Task12/task12_old_switch_fails.cpp -o task12_old_switch_fails
+/mnt/data/DSA01-192424104-Assignment1/Task12/task12_old_switch_fails.cpp: In function ‘long long int fare(Zone)’:
+/mnt/data/DSA01-192424104-Assignment1/Task12/task12_old_switch_fails.cpp:8:8: warning: enumeration value ‘Airport’ not handled in switch [-Wswitch]
+    8 | switch (z) { // no case for Airport
+      |        ^
+
+
+[compile: success]
+[run exit code: 0]
+Airport fare from the old switch = 0 paise (free travel to the airport!)

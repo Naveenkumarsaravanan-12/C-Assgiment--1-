@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra Task07/task07_oop.cpp -o task07_oop
+
+[compile: success]
+[run exit code: 0]
+paid 1000 balance 10000
+paid 3600 balance 10000
+paid 2000 balance 10000
+deduct(9999) accepted? false balance still 10000
+recharge(-500) accepted? false
+sizeof(SmartCard) = 8 bytes

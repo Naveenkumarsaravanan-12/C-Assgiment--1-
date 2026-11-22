@@ -1,0 +1,17 @@
+$ g++ -std=c++17 -Wall -Wextra Task08/task08_input.cpp -o task08_input
+
+[compile: success]
+[run exit code: 0]
+Hour of journey (0-23) :  invalid input - digits only, try again
+Hour of journey (0-23) :  out of range (0..23), try again
+Hour of journey (0-23) : Farthest zone (0=Inner,1=Middle,2=Outer):  invalid input - digits only, try again
+Farthest zone (0=Inner,1=Middle,2=Outer):  out of range (0..2), try again
+Farthest zone (0=Inner,1=Middle,2=Outer): Category (0=Adult,1=Student,2=Senior) : Recharge in whole rupees (0-5000) :  out of range (0..5000), try again
+Recharge in whole rupees (0-5000) : 
+==== JOURNEY REPORT ====
+Hour                 9 (peak)
+Fare            Rs    12.00
+Opening bal.    Rs   300.00
+Closing bal.    Rs   288.00
+Status ALLOWED
+Balance as double (display only): Rs 288.00

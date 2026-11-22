@@ -1,0 +1,19 @@
+$ g++ -std=c++17 -Wall -Wextra Task_alt/alt_bench.cpp -o alt_bench
+/mnt/data/DSA01-192424104-Assignment1/Task_alt/alt_bench.cpp: In lambda function:
+/mnt/data/DSA01-192424104-Assignment1/Task_alt/alt_bench.cpp:52:78: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]
+   52 | double e = timeIt([&] { std::istringstream in(text); long long s = 0; int v; while (in >>
+      |                                                                              ^~~~~
+/mnt/data/DSA01-192424104-Assignment1/Task_alt/alt_bench.cpp:53:12: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   53 | v) s += v; return s; });
+      |            ^~~~~~
+
+
+[compile: success]
+[run exit code: 0]
+Peak check, && / || expression : 639.3 ms for 200000000 calls
+Peak check, bool peak[24] table: 558.7 ms for 200000000 calls
+Base fare, switch : 563.9 ms for 200000000 calls
+Base fare, array by zone : 482.0 ms for 200000000 calls
+Read 1,000,000 numbers, cin >> : 26.1 ms
+Read 1,000,000 numbers, getline+stoi: 46.9 ms
+sizeof(PEAK_TABLE) = 24 bytes, sizeof(FARE_TABLE) = 24 bytes
